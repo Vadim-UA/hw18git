@@ -1,0 +1,338 @@
+.dishes {
+	font-family: "Helvetica Neue";
+	// .dishes__container
+
+	&__container {
+	}
+
+	// .dishes__header
+
+	&__header {
+	}
+
+	// .dishes__cards
+
+	&__cards {
+	}
+}
+.header-deashes {
+	text-align: center;
+	// .header-deashes__title
+
+	&__title {
+		margin-bottom: 95px;
+		@media (max-width: 574px){
+			margin-bottom: 50px;
+		}
+	}
+}
+.title-dishes {
+	font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.5;
+		letter-spacing: 0.2em;
+		text-align: center;
+		color: #d9d9d9;
+		font-family: "HelveticaNeueCyr";
+		text-transform: capitalize;
+		position: relative;
+		display: inline-block;
+		z-index: 1;
+		background: url("../img/dishes/title-bg.png") 0 75% / 99% no-repeat;
+		padding: 0px 12px;
+		&::after {
+			content: "";
+			display: block;
+			width: 60px;
+			height: 2px;
+			background-color: #34c759;
+			transform: translate(151px, 32px);
+			transition: linear all 0.2s;
+			@media (max-width: 420px) {
+				transform: translate(80px, 15px);
+			}
+		}
+
+		@media (max-width: 420px) {
+			font-size: 22px;
+			margin-bottom: 60px;
+		}
+}
+.card-dishes {
+	position: relative;
+	display: flex;
+	column-gap: 30px;
+	row-gap: 30px;
+	flex-wrap: wrap;
+	@media (max-width: 1130px) {
+		column-gap: 15px;
+		row-gap: 15px;
+		justify-content: space-around;
+	}
+	@media (max-width: 574px){
+		row-gap: 5px;
+	}
+
+	.card-dishes__arrow-more {
+		min-width: 40px;
+		min-height: 40px;
+		background: url("../img/dishes/arrow.png") center / cover no-repeat;
+		position: absolute;
+		z-index: 12;
+		top: 24px;
+		right: 24px;
+		transition: 0.2s ease 0s;
+		border-radius: 50%;
+		&:hover {
+			background: url("../img/dishes/arrow.png") center / cover no-repeat #34c759be;
+		}
+	}
+	// .card-dishes__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		//flex: 0 1 33.333%;
+		max-width: 350px;
+		background-color: #252525;
+		border-radius: 6px;
+		overflow: hidden;
+		position: relative;
+		transition: 0.3s ease 0s;
+		&:hover .card-dishes__image{
+			transform: scale(1.05);
+		} 
+		@media (max-width: 1100px) {
+			max-width: 470px;
+		}
+		@media (max-width: 974px) {
+			max-width: 420px;
+		}
+		@media (max-width: 874px){
+			max-width: 390px;
+		}
+		@media (max-width: 814px){
+			max-width: 380px;
+		}
+		@media (max-width: 794px){
+			max-width: 340px;
+		}
+		@media (max-width: 714px){
+			max-width: 320px;
+		}
+		@media (max-width: 674px){
+			max-width: 270px;
+		}
+		@media (max-width: 574px){
+			max-width: none;
+			border-radius: 0;
+		}
+	}
+
+	// .card-dishes__picture
+
+	&__picture {
+		position: relative;
+		padding: 0px 0px 74.28% 0px;
+		transition: 0.2s ease 0s;
+		overflow: hidden;
+	}
+
+	// .card-dishes__image
+
+	&__image {
+		transition: 0.5s ease 0s;
+	}
+
+	// .card-dishes__body
+
+	&__body {
+		padding: 30px 30px 0px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		& :not(:last-child) {
+			margin-bottom: 20px;
+			@media (max-width: 350px) {
+				margin-bottom: 5px;
+			}
+		}
+		@media (max-width: 350px) {
+			padding: 16px;
+		}
+	}
+
+	// .card-dishes__title
+
+	&__title {
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 0.94;
+		letter-spacing: 0px;
+		text-align: left;
+		color: #d9d9d9;
+		transition: 0.3s ease 0s;
+		&:hover{
+			color: #34c759;;
+		}
+		@media (max-width: 350px) {
+			font-size: 36px;
+		}
+	}
+
+	// .card-dishes__subtitle
+
+	&__subtitle {
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.33;
+		letter-spacing: -0.15px;
+		text-align: left;
+		color: #a4a8b2;
+	}
+
+	// .card-dishes__text
+
+	&__text {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.38;
+		letter-spacing: -0.16px;
+		text-align: left;
+		color: #85878c;
+		min-height: 100%;
+		flex: 1 1 auto;
+	}
+
+	// .card-dishes__footer
+
+	&__footer {
+	}
+}
+
+.footer-dishes {
+	padding: 24px 24px 24px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 350px) {
+		padding: 16px;
+	}
+
+	// .footer-dishes__button
+
+	&__button {
+		font-family: "Helvetica Neue";
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		max-height: 40px;
+		min-width: 100px;
+		border: 2px solid #303030;
+		border-radius: 30px;
+		color: #929292;
+		text-transform: uppercase;
+		transition: 0.3s ease 0s;
+
+		font-size: 10px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 4;
+		letter-spacing: 0.2em;
+		text-align: center;
+		&:hover {
+			background-color: #34c759;
+			border-color: #34c759;
+			color: #252525;
+		}
+		@media (max-width: 420px) {
+			min-height: 50px;
+			min-width: 110px;
+		}
+	}
+}
+
+
+.simple-rating {
+	position: relative;
+	display: inline-block;
+
+	// .simple-rating__items
+
+	&__items {
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+		transition: color 0.3s ease 0s;
+		&::before {
+			content: "12";
+			position: absolute;
+			top: -4px;
+			right: -31px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 2.5;
+			letter-spacing: 1.5px;
+			text-align: left;
+			color: #b2b2b2;
+			@media (max-width: 676px){
+				display: none;
+			}
+			@media (max-width: 350px) {
+				display: none;
+			}
+		}
+	}
+
+	// .simple-rating__item
+
+	&__item {
+		position: absolute;
+		width: 0%;
+		height: 0%;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition: color 0.3s ease 0s;
+		&:checked,
+		&:checked ~ .simple-rating__label::before {
+			background: url("../img/dishes/star-gold.svg") 50% 0 no-repeat;
+		}
+	}
+
+	// .simple-rating__label
+
+	&__label {
+		flex: 0 0 20%;
+		height: 100%;
+		cursor: pointer;
+		transition: color 0.3s ease 0s;
+		&::before {
+			content: "";
+			width: 20px;
+			height: 19px;
+			display: flex;
+			background: url("../img/dishes/star.svg") 50% 0 no-repeat;
+			@media (max-width: 350px) {
+				width: 28px;
+				height: 20px;
+			}
+		}
+
+		&:hover.simple-rating__label::before,
+		&:hover ~ .simple-rating__label::before,
+		&:checked ~ .simple-rating__label::before {
+			background: url("../img/dishes/star-gold.svg") 50% 0 no-repeat;
+		}
+	}
+}

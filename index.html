@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" href="css/null.css">-->
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>ДЗ18 SCSS</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__switcher logo-block">
+					<div class="logo-block__icon">
+						<a href="#"><img src="img/header/logo.png" class="logo-icon" alt="logo"></a>
+					</div>
+					<div class="logo-block__text">healthy switcher</div>
+				</div>
+				<div class="header__nav nav-bar">
+					<ul class="nav-bar__items">
+						<li class="nav-bar__item"><a href="#" class="nav-bar__link">Menu</a></li>
+						<li class="nav-bar__item"><a href="#" class="nav-bar__link">Recipes</a></li>
+						<li class="nav-bar__item"><a href="#" class="nav-bar__link">Chefs</a></li>
+						<li class="nav-bar__item"><a href="#" class="nav-bar__link">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="favourite">
+				<!--<img src="img/homepage/placeholder.jpg" class="placeholder-bg" alt="#">-->
+				<div class="favourite__container header-favourite">
+					<div class="header-favourite__item">
+						<div class="favourite__title">Your <span class="bold">favourite food</span></div>
+						<div class="favourite__title">Delivered <span class="bold">hot & fresh</span></div>
+					</div>
+					<div class="favourite__subtitle"><span>HEALTHY SWITCHER</span> chefs do all the prep work, like peeling,
+						chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.</div>
+					<div class="button-wrapper">
+						<a href="#" class="favourite__button">Order Now</a>
+					</div>
+					<div class="favourite__contacts card-favourite">
+						<div class="card-favourite__item contacts">
+							<img src="img/homepage/time.svg" class="contacts__icon" alt="#">
+							<div class="contacts__title">Today 10:00 am - 7:00 pm</div>
+							<div class="contacts__subtitle">Working hours</div>
+						</div>
+						<div class="card-favourite__item contacts">
+							<img src="img/homepage/twitt.svg" class="contacts__icon" alt="#">
+							<div class="contacts__title">Velyka Vasylkivska 100</div>
+							<div class="contacts__subtitle">Get Directions</div>
+						</div>
+						<div class="card-favourite__item contacts">
+							<img src="img/homepage/call.svg" class="contacts__icon" alt="#">
+							<div class="contacts__title">+38 (063)833 24 15</div>
+							<div class="contacts__subtitle">Call Online</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="works">
+				<div class="works__container">
+					<div class="works__title">how it works</div>
+					<div class="works__content">
+						<div class="works__cards card-works">
+							<div class="card-works__item body-card-works">
+								<div class="body-card-works__title">Pick meals</div>
+								<div class="body-card-works__text">Choose your meals from our diverse weekly menu. Find gluten
+									or dairy free, low carb & veggie options.</div>
+							</div>
+						</div>
+						<div class="works__cards card-works">
+							<div class="card-works__item body-card-works">
+								<div class="body-card-works__title">Choose how often</div>
+								<div class="body-card-works__text">Our team of chefs do the prep work - no more chopping,
+									measuring, or sink full of dishes!</div>
+							</div>
+						</div>
+						<div class="works__cards card-works">
+							<div class="card-works__item body-card-works">
+								<div class="body-card-works__title">fast deliveries</div>
+								<div class="body-card-works__text">Your freshly prepped 15-min dinner kits arrive on your
+									doorstep in a refrigerated box.</div>
+							</div>
+						</div>
+						<div class="works__cards card-works">
+							<div class="card-works__item body-card-works">
+								<div class="body-card-works__title">tasty meals</div>
+								<div class="body-card-works__text">Gobble makes cooking fast, so you have more time to unwind
+									and be with family.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dishes">
+				<div class="dishes__container">
+					<div class="dishes__header header-deashes">
+						<div class="header-deashes__title">
+							<div class="title-dishes">Dish Of The Day</div>
+						</div>
+					</div>
+					<div class="dishes__cards card-dishes">
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/01.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating1__5" value="5"
+														class="simple-rating__item">
+													<label for="simple-rating1__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating1__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating1__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating1__3" checked value="3"
+														class="simple-rating__item">
+													<label for="simple-rating1__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating1__2" value="2"
+														class="simple-rating__item">
+													<label for="simple-rating1__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating1__1" value="1"
+														class="simple-rating__item">
+													<label for="simple-rating1__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/02.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating2__5" value="5"
+														class="simple-rating__item">
+													<label for="simple-rating2__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating2__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating2__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating2__3" value="3"
+														class="simple-rating__item">
+													<label for="simple-rating2__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating2__2" value="2"
+														class="simple-rating__item">
+													<label for="simple-rating2__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating2__1" checked value="1"
+														class="simple-rating__item">
+													<label for="simple-rating2__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/03.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating3__5" value="5"
+														class="simple-rating__item">
+													<label for="simple-rating3__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating3__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating3__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating3__3" value="3"
+														class="simple-rating__item">
+													<label for="simple-rating3__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating3__2" checked value="2"
+														class="simple-rating__item">
+													<label for="simple-rating3__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating3__1" value="1"
+														class="simple-rating__item">
+													<label for="simple-rating3__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/04.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating4__5" checked value="5"
+														class="simple-rating__item">
+													<label for="simple-rating4__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating4__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating4__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating4__3" value="3"
+														class="simple-rating__item">
+													<label for="simple-rating4__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating4__2" value="2"
+														class="simple-rating__item">
+													<label for="simple-rating4__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating4__1" value="1"
+														class="simple-rating__item">
+													<label for="simple-rating4__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/05.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating5__5" value="5"
+														class="simple-rating__item">
+													<label for="simple-rating5__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating5__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating5__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating5__3" checked value="3"
+														class="simple-rating__item">
+													<label for="simple-rating5__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating5__2" value="2"
+														class="simple-rating__item">
+													<label for="simple-rating5__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating5__1" value="1"
+														class="simple-rating__item">
+													<label for="simple-rating5__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+						<div class="card-dishes__item">
+							<a href="#" class="card-dishes__arrow-more"></a>
+							<a href="#" class="card-dishes__picture _ibg">
+								<img class="card-dishes__image" src="img/dishes/06.jpg" alt="dishes__image">
+							</a>
+							<div class="card-dishes__body">
+								<div class="body-dishes-header">
+									<a href="#" class="card-dishes__title">Featured Meal</a>
+									<div class="card-dishes__subtitle">Served with french fries + drink</div>
+								</div>
+								<div class="card-dishes__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+									whopper patty, Add Tender crisp patty and more...
+								</div>
+							</div>
+							<div class="card-dishes__footer footer-dishes">
+								<div class="footer-dishes__stars star-dishes">
+									<form action="#" method="get" class="form form_margin">
+										<div class="form__item">
+											<div class="simple-rating">
+												<div class="simple-rating__items">
+													<input type="radio" name="simple-rating" id="simple-rating6__5" value="5"
+														class="simple-rating__item">
+													<label for="simple-rating6__5" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating6__4" value="4"
+														class="simple-rating__item">
+													<label for="simple-rating6__4" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating6__3" value="3"
+														class="simple-rating__item">
+													<label for="simple-rating6__3" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating6__2" checked value="2"
+														class="simple-rating__item">
+													<label for="simple-rating6__2" class="simple-rating__label"></label>
+													<input type="radio" name="simple-rating" id="simple-rating6__1" value="1"
+														class="simple-rating__item">
+													<label for="simple-rating6__1" class="simple-rating__label"></label>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<a href="#" class="footer-dishes__button">ORDER</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="recipes">
+				<div class="recipes__container">
+					<div class="recipes__header">
+						<div class="recipes__title">Recipes From Our Chefs</div>
+					</div>
+					<div class="recipes__card-block block-card-recipes">
+						<div class="block-card-recipes__pictures">
+							<div class="block-card-recipes__solo">
+								<div class="solo-picture">
+									<a href="#" class="solo-picture__link"></a>
+									<div class="solo-picture__bg">
+										<img src="img/recipes/01.jpg" alt="image-bg" class="solo-picture__image-bg">
+									</div>
+									<div class="solo-picture__body body-picture-solo">
+										<div class="body-picture-solo__title">breakfast</div>
+										<div class="body-picture-solo__date">05 Jul 2016</div>
+										<a href="#" class="body-picture-solo__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit</a>
+										<a href="#" class="body-picture-solo__cheaf">Jason Keller</a>
+										<div class="body-picture-solo__browse browse-answear">
+											<a href="#" class="browse-answear__browse">275</a>
+											<a href="#" class="browse-answear__answear">12</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-card-recipes__pictures">
+							<div class="block-card-recipes__group">
+								<div class="group-pictures">
+									<div class="group-pictures__items">
+										<a href="#" class="group-pictures__item _ibg">
+											<img src="img/recipes/02.jpg" class="group-image-bg" alt="image">
+											<div class="group-pictures__item-link link-item-group">
+												<div class="link-item-group__text">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+												<div class="link-item-group__footer footer-cards-recipes">
+													<div class="footer-cards-recipes__data-block">
+														<div class="footer-cards-recipes__link">lunch</div>
+														<div class="footer-cards-recipes__date">07 Jan 2016</div>
+													</div>
+													<div class="browse-answear">
+														<div class="browse-answear__browse">275</div>
+														<div class="browse-answear__answear">12</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="group-pictures__item _ibg">
+											<img src="img/recipes/02.jpg" class="group-image-bg" alt="image">
+											<div class="group-pictures__item-link link-item-group">
+												<div class="link-item-group__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+												<div class="link-item-group__footer footer-cards-recipes">
+													<div class="footer-cards-recipes__data-block">
+														<div class="footer-cards-recipes__link">dinner</div>
+														<div class="footer-cards-recipes__date">07 Jan 2016</div>
+													</div>
+													<div class="browse-answear">
+														<div class="browse-answear__browse">275</div>
+														<div class="browse-answear__answear">12</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="group-pictures__item _ibg">
+											<img src="img/recipes/02.jpg" class="group-image-bg" alt="image">
+											<div class="group-pictures__item-link link-item-group">
+												<div class="link-item-group__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+												<div class="link-item-group__footer footer-cards-recipes">
+													<div class="footer-cards-recipes__data-block">
+														<div class="footer-cards-recipes__link">sweets</div>
+														<div class="footer-cards-recipes__date">07 Jan 2016</div>
+													</div>
+													<div class="browse-answear">
+														<div class="browse-answear__browse">275</div>
+														<div class="browse-answear__answear">12</div>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">footer</footer>
+	</div>
+</body>
+
+</html>
